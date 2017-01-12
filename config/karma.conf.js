@@ -3,6 +3,7 @@ var webpackConfig = require('./webpack.test');
 module.exports = function (config) {
   var _config = {
     basePath: '',
+
     frameworks: ['jasmine'],
 
     files: [
@@ -15,9 +16,10 @@ module.exports = function (config) {
 
     webpack: webpackConfig,
 
-    webpackMiddleWare: {
+    webpackMiddleware: {
       stats: 'errors-only'
     },
+
     webpackServer: {
       noInfo: true
     },
@@ -26,8 +28,8 @@ module.exports = function (config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autowatch: false,
-    browser: ['PhantomJS'],
+    autoWatch: false,
+    browsers: ['PhantomJS'],
     singleRun: true
   };
 
