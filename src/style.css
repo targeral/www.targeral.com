@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'PingFang';
+    src: url('../assets/common/font/pingfang/sanfranciscodisplay-regular-webfont.woff2') format('woff2'),
+         url('../assets/common/font/pingfang/sanfranciscodisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
