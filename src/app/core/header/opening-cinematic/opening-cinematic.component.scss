@@ -1,20 +1,23 @@
 /*@keyframe*/
-@keyframes headerAn {
+@keyframes slowOut {
   0% {
-    height: 100vh;
+    opacity: 1;
   }
   100% {
-    height: 30vh;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    display: none;
   }
 }
 /*@keyframe*/
 #opening {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  background-color: #f56e25;
   background-image: url(./open-c.jpg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /*animation: headerAn 3s cubic-bezier(.24, .66, .83, .33) 3s forwards;*/
+  background-size: cover;
 
   header {
     margin: 0 auto;
@@ -31,7 +34,8 @@
 
       h1 {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 6.7rem;
+        font-size: 67px;
+        transition: height 1s ease;
 
         span {
           color: rgba(255, 255, 255, 1);
@@ -41,8 +45,24 @@
 
       h2 {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 2rem;
+        font-size: 20px;
+        transition: all 1s ease;
       }
+    }
+  }
+}
+
+:host-context(#header.hshort) #opening {
+  header {
+    h1 {
+      font-size: 50px;
+      line-height: 50px;
+      margin: 0;
+      padding: 0;
+      transition: all 1s ease;
+    }
+    h2 {
+      display: none;
     }
   }
 }

@@ -1,0 +1,11 @@
+<nav>
+  <ul>
+    <li (click)="clickNav(1)" [ngClass]="{'focus': liStatus[0]}"><a href="#">Front End</a></li>
+    <li (click)="clickNav(2)" [ngClass]="{'focus': liStatus[1]}"><a href="#">Back End</a></li>
+    <li (click)="clickNav(3)" [ngClass]="{'focus': liStatus[2]}"><a href="#">Full Stack</a></li>
+    <li><span><a href="#feature">Feature</a></span><span (click)="clicked($event)"><a>{{ upOrdown }}</a></span></li>
+    <li (click)="clickNav(4)" [ngClass]="{'focus': liStatus[3]}"><a href="#">Lift</a></li>
+    <li (click)="clickNav(5)" [ngClass]="{'focus': liStatus[4]}"><a href="#">Music</a></li>
+    <li (click)="clickNav(6)" [ngClass]="{'focus': liStatus[5]}"><a href="#">Other</a></li>
+  </ul>
+</nav>
