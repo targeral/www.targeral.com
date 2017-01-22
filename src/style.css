@@ -5,3 +5,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+blog-app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:center;
+}
