@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var helpers = require('./helpers');
+var svgoConfig = require('./svgo-config.json');
 
 module.exports = {
   entry: {
@@ -15,6 +16,12 @@ module.exports = {
   },
 
   module: {
+    preLoaders: [
+      {
+        test: /\.svg$/,
+        loader: 'svgo?' + JSON.stringify(svgoConfig)
+      }
+    ],
     loaders: [
       {
         test: /\.ts$/,
@@ -41,7 +48,12 @@ module.exports = {
       {
         test: /\.scss$/,
         loader: 'css-to-string-loader!css-loader!sass-loader'
-      }
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite',
+        include: /assets\/icons/
+      },
     ]
   },
 

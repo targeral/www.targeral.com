@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ShareModule } from '../share/share.module';
 
 import { BlogMainComponent } from './blog-main.component';
+import { BlogListComponent } from './blog-list/blog-list.component';
+import { BlogComponent } from './blog-list/blog/blog.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    ShareModule
   ],
   exports: [ BlogMainComponent ],
-  declarations: [  BlogMainComponent ]
+  declarations: [  BlogMainComponent, BlogListComponent, BlogComponent ]
 })
 
 export class BlogMainModule { }

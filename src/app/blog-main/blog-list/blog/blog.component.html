@@ -1,0 +1,28 @@
+<article>
+  <header>
+    <h1>{{ b.title }}</h1>
+  </header>
+  <section class="blog-label">
+    <div class="blog-label-container">
+      <span><svg><use [attr.xlink:href]="'#' + b.label.icon"></use></svg></span>
+      <ul>
+        <li>{{b.label.classify}}</li>
+        <li>{{b.label.tag}}</li>
+      </ul>
+    </div>
+  </section>
+  <section class="message">
+    <ul>
+      <li *ngFor="let msg of b.message | getEntries;">
+        <span><svg><use [attr.xlink:href]="'#' + msg[0]"></use></svg></span>
+        {{ msg | blogmsg }}
+      </li>
+    </ul>
+  </section>
+  <section class="content">
+    {{ b.content }}
+  </section>
+  <section class="readmore">
+    <a href="#readmore">Read more</a>
+  </section>
+</article>
