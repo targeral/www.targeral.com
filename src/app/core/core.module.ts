@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { OpeningCinematicComponent } from './header/opening-cinematic/opening-cinematic.component';
 import { NavComponent } from './header/nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 import { SvgSpriteComponent } from './svg-sprite/svg-sprit.component';
 
 //main code
@@ -13,8 +14,8 @@ import { SvgSpriteComponent } from './svg-sprite/svg-sprit.component';
   imports: [
     CommonModule
   ],
-  exports: [ HeaderComponent, SvgSpriteComponent ],
-  declarations: [ HeaderComponent, OpeningCinematicComponent, NavComponent, SvgSpriteComponent ],
+  exports: [ HeaderComponent, SvgSpriteComponent, FooterComponent ],
+  declarations: [ HeaderComponent, OpeningCinematicComponent, NavComponent, SvgSpriteComponent, FooterComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 
