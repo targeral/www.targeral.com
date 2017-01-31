@@ -1,24 +1,30 @@
 //import lib
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ShareModule } from '../share/share.module';
+//import lib
 
 //import components
-import { HeaderComponent } from './header/header.component';
-import { OpeningCinematicComponent } from './header/opening-cinematic/opening-cinematic.component';
-import { NavComponent } from './header/nav/nav.component';
+import { HeaderComponent } from './blog-header/header.component';
+import { OpeningCinematicComponent } from './blog-header/opening-cinematic/opening-cinematic.component';
+import { NavComponent } from './blog-header/nav/nav.component';
+
+import { BlogMainComponent } from './blog-main/blog-main.component';
+
 import { BlogFeatureComponent } from './blog-feature/blog-feature.component';
-import { FooterComponent } from './footer/footer.component';
+
+import { FooterComponent } from './blog-footer/footer.component';
+
 import { SvgSpriteComponent } from './svg-sprite/svg-sprit.component';
+//import components
 
 //main code
 @NgModule({
   imports: [
-    CommonModule
+    ShareModule
   ],
-  exports: [ HeaderComponent, SvgSpriteComponent, FooterComponent, BlogFeatureComponent ],
+  exports: [ HeaderComponent, BlogMainComponent, FooterComponent, BlogFeatureComponent, SvgSpriteComponent ],
 
-  declarations: [ HeaderComponent, OpeningCinematicComponent, NavComponent, SvgSpriteComponent, FooterComponent, BlogFeatureComponent ],
+  declarations: [ HeaderComponent, OpeningCinematicComponent, NavComponent, BlogMainComponent, BlogFeatureComponent, FooterComponent, SvgSpriteComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 
