@@ -1,0 +1,36 @@
+<article>
+  <header>
+    <h1>{{ blog.title }}</h1>
+  </header>
+  <section class="blog-label">
+    <div class="blog-label-container">
+      <span><svg><use [attr.xlink:href]="blog.icon | icontransform"></use></svg>
+      </span><ul>
+        <li>{{ blog.classify }}</li>
+        <li>{{ blog.label }}</li>
+      </ul>
+    </div>
+  </section>
+  <section class="message">
+    <ul>
+      <li>
+        <span><svg><use [attr.xlink:href]="'#author'"></use></svg></span>
+        {{ blog.author }}
+      </li>
+      <li>
+        <span><svg><use [attr.xlink:href]="'#date'"></use></svg></span>
+        {{ blog.date | date:"yyyy-MM-dd" }}
+      </li>
+      <li>
+        <span><svg><use [attr.xlink:href]="'#comment'"></use></svg></span>
+        {{ blog.comment_number }}
+      </li>
+    </ul>
+  </section>
+  <section class="content">
+    {{ blog.content }}
+  </section>
+  <section class="readmore">
+    <a href="#readmore">Read more</a>
+  </section>
+</article>

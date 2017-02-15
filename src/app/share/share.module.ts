@@ -7,6 +7,7 @@ import { getKeysPipe } from './pipe/get-keys.pipe';
 import { getValuesPipe } from './pipe/get-values.pipe';
 import { getEntriesPipe } from './pipe/get-entries.pipe';
 import { BlogMsgPipe } from './pipe/blogmsg.pipe';
+import { IconPipe } from './pipe/icon.pipe';
 
 @NgModule({
   imports: [ CommonModule, FormsModule ],
@@ -14,7 +15,8 @@ import { BlogMsgPipe } from './pipe/blogmsg.pipe';
     getKeysPipe,
     getValuesPipe,
     getEntriesPipe,
-    BlogMsgPipe
+    BlogMsgPipe,
+    IconPipe
   ],
   exports: [
     CommonModule,
@@ -23,6 +25,7 @@ import { BlogMsgPipe } from './pipe/blogmsg.pipe';
     getValuesPipe,
     getEntriesPipe,
     BlogMsgPipe,
+    IconPipe
   ]
 })
 

@@ -34,18 +34,20 @@
 
       h1 {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 67px;
-        transition: height 1s ease;
+        font-size: calc(67 / 1920 * 100vw);
+        transform: translateZ(0);
+        transition: all 1s ease;
 
         span {
           color: rgba(255, 255, 255, 1);
-          margin-right: 1rem;
+          margin-right: calc(12 / 1920 * 100vw);
         }
       }
 
       h2 {
         color: rgba(255, 255, 255, 0.6);
-        font-size: 20px;
+        font-size: calc(20 / 1920 * 100vw);
+        transform: translateZ(0);
         transition: all 1s ease;
       }
     }
@@ -57,12 +59,43 @@
     h1 {
       font-size: 50px;
       line-height: 50px;
-      margin: 0;
-      padding: 0;
+      transform: translateZ(0);
+      /* margin: 0;
+      padding: 0; */
       transition: all 1s ease;
     }
     h2 {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #opening {
+    header .hgroup {
+      h1 {
+        font-size: 50px;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #opening {
+    header {
+      h1 {
+        font-size: 50px;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-top: 15px;
+      }
     }
   }
 }
