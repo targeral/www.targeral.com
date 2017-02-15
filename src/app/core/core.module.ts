@@ -8,8 +8,6 @@ import { HeaderComponent } from './blog-header/header.component';
 import { OpeningCinematicComponent } from './blog-header/opening-cinematic/opening-cinematic.component';
 import { NavComponent } from './blog-header/nav/nav.component';
 
-import { BlogMainComponent } from './blog-main/blog-main.component';
-
 import { BlogFeatureComponent } from './blog-feature/blog-feature.component';
 
 import { FooterComponent } from './blog-footer/footer.component';
@@ -22,9 +20,9 @@ import { SvgSpriteComponent } from './svg-sprite/svg-sprit.component';
   imports: [
     ShareModule
   ],
-  exports: [ HeaderComponent, BlogMainComponent, FooterComponent, BlogFeatureComponent, SvgSpriteComponent ],
+  exports: [ HeaderComponent, FooterComponent, BlogFeatureComponent, SvgSpriteComponent ],
 
-  declarations: [ HeaderComponent, OpeningCinematicComponent, NavComponent, BlogMainComponent, BlogFeatureComponent, FooterComponent, SvgSpriteComponent ],
+  declarations: [ HeaderComponent, OpeningCinematicComponent, NavComponent, BlogFeatureComponent, FooterComponent, SvgSpriteComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 
