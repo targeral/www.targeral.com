@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
 
 //pipe
 import { getKeysPipe } from './pipe/get-keys.pipe';

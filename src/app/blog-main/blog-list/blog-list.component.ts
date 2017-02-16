@@ -16,13 +16,17 @@ let style = require('./blog-list.component.scss');
 
 export class BlogListComponent implements OnInit {
   blogs: Blog[];
+  counts: number;
 
   constructor(private blogsService: BlogsService) { }
 
   getBlogList(): void {
     this.blogsService
         .getBlogs()
-        .then(blogs => this.blogs = blogs);
+        .then(blogs => {
+          this.blogs = blogs;
+          this.counts = blogs.length;
+        });
   }
 
   ngOnInit(): void {
