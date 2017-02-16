@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+html {
+  overflow: hidden;
+}
+
 blog-app {
   display: flex;
   flex-direction: column;
@@ -13,4 +17,5 @@ blog-app {
   align-items: center;
   justify-content:center;
   min-height: 100vh;
+  height: 100vh;
 }
