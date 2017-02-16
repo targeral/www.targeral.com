@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({name: 'icontransform'})
 
 export class IconPipe implements PipeTransform {
-  transform(icon: string): String {
+  transform(icon: string): string {
     let result = '';
     switch (icon) {
       case "frontend":

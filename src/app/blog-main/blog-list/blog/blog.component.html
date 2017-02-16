@@ -27,8 +27,7 @@
       </li>
     </ul>
   </section>
-  <section class="content">
-    {{ blog.content }}
+  <section class="content markdown-body" [innerHTML]="blog.summary | MarkdownToHtml">
   </section>
   <section class="readmore">
     <a href="#readmore">Read more</a>
