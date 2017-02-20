@@ -6,13 +6,17 @@
     font-style: normal;
 }
 
+html {
+  overflow: hidden;
+}
+
 blog-app {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   justify-content:center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 //markdown css
