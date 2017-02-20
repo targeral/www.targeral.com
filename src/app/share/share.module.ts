@@ -9,6 +9,7 @@ import { getValuesPipe } from './pipe/get-values.pipe';
 import { getEntriesPipe } from './pipe/get-entries.pipe';
 import { BlogMsgPipe } from './pipe/blogmsg.pipe';
 import { IconPipe } from './pipe/icon.pipe';
+import { MarkdownToHtmlPipe } from 'markdown-to-html-pipe';
 
 @NgModule({
   imports: [ CommonModule, FormsModule ],
@@ -17,7 +18,8 @@ import { IconPipe } from './pipe/icon.pipe';
     getValuesPipe,
     getEntriesPipe,
     BlogMsgPipe,
-    IconPipe
+    IconPipe,
+    MarkdownToHtmlPipe
   ],
   exports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { IconPipe } from './pipe/icon.pipe';
     getValuesPipe,
     getEntriesPipe,
     BlogMsgPipe,
-    IconPipe
+    IconPipe,
+    MarkdownToHtmlPipe
   ]
 })
 
