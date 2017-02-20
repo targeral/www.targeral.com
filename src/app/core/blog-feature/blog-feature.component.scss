@@ -1,8 +1,15 @@
 #blog-feature {
   width: 100%;
-  height: 100%;
+  padding-bottom: 20px;
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 1px 0px 0px #ccc,
               -1px 0px 0px #ccc;
+
+  blog-filter {
+    width: 100%;
+    min-height: 200px;
+    border-bottom: 1px solid #ccd1d9;
+    display: block;
+  }
 }
