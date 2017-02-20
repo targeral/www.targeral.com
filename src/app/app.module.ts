@@ -5,11 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 //import component
 import { AppComponent } from './app.component';
-import { AppRoutingModule }  from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 
 //import module
 import { CoreModule } from './core/core.module';
 import { BlogMainModule } from './blog-main/blog-main.module';
+import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { BlogMainModule } from './blog-main/blog-main.module';
     BlogMainModule,
     AppRoutingModule,
     HttpModule,
-    JsonpModule
+    JsonpModule,
+    SlimLoadingBarModule.forRoot()
   ],
   declarations: [ AppComponent ],
   bootstrap: [ AppComponent ],
