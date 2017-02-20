@@ -1,0 +1,15 @@
+.blog-filter {
+  padding: 10px;
+
+  .label {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    blog-label {
+      margin-right: 10px;
+    }
+  }
+}

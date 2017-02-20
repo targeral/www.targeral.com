@@ -49,7 +49,7 @@ blog-footer {
   blog-feature {
     flex: none;
     width: 400px;
-    height: 100px;
+    min-height: 100px;
     margin-left: 30px;
   }
 }

@@ -1,0 +1,15 @@
+div.label-item {
+  min-width: 50px;
+  height: 30px;
+  padding: 0 10px;
+  background-color: #595f69;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  box-shadow: 1px 0px 1px 0px #3d444f, 0px 1px 1px 0px #3d444f;
+  cursor: pointer;
+
+  &.selected {
+    background-color: rgba(89, 95, 105, 0.7);
+  }
+}

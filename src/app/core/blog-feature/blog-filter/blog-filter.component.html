@@ -1,0 +1,6 @@
+<section class="blog-filter">
+  <blog-search [range]="range" (onSearch)="onSearch($event)"></blog-search>
+  <div class="label">
+    <blog-label *ngFor="let label of labels" [label]="label" [selected]="range" (onSelected)="onSelected($event)"></blog-label>
+  </div>
+</section>
